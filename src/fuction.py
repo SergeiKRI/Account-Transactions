@@ -52,6 +52,9 @@ def mask_card(number):
     if name_card[0] == 'Счет':
         return 'Счет **' + name_card[-1][-4:]
 
+    elif name_card[0] =='':
+        return ''
+
     else:
         form_card = name_card[-1][:6]+'******'+name_card[-1][-4:]
         # разбивает номер по 4 цифры
